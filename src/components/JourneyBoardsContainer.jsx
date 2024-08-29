@@ -69,12 +69,6 @@ const JourneyBoardsContainer = () => {
                     icon={iButton}
 
                 >
-                    {
-                        {
-                            card1: 'hi',
-                            card2: 'jvc'
-                        }
-                    }
                 </JourneyCard>
             ))}
         </div>

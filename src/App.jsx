@@ -10,7 +10,7 @@ function App() {
     return (
         <>
             <Header />
-            <div className='rounded-xl overflow-hidden shadow-lg absolute z-10 bg-white'>
+            <div className='rounded-xl overflow-hidden shadow-lg  absolute z-10 bg-white'>
                 <JourneyBoard />
             </div>
             <div className='right-0 absolute z-20'>
