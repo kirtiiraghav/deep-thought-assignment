@@ -1,4 +1,5 @@
 import React from 'react';
+import ThreadA from './ThreadA';
 
 const JourneyCard = ({ title, description, children, icon }) => {
     return (
@@ -10,6 +11,7 @@ const JourneyCard = ({ title, description, children, icon }) => {
             <div className="p-4">
                 <p className="text-sm mb-4"><span className='font-semibold'>Description: </span>{description}</p>
             </div>
+            <ThreadA />
 
         </div>
     );

@@ -19,7 +19,7 @@ export default function Header() {
                         <li className='cursor-pointer'><img src={tool} alt="tool" /></li>
                         <li className='cursor-pointer relative'><img src={notification} alt="tool" /><span className='bg-[#FF2C55] h-2 w-2 rounded-[50%] absolute top-2 right-2'></span></li>
                         <li className='cursor-pointer'><img src={userImg} alt="" /></li>
-                        <ul className='flex flex-col gap-1'>
+                        <ul className='flex flex-col gap-1 cursor-pointer'>
                             <li className='bg-[#3683F0] h-1 w-1 rounded-[50%]'></li>
                             <li className='bg-[#3683F0] h-1 w-1 rounded-[50%]'></li>
                             <li className='bg-[#3683F0] h-1 w-1 rounded-[50%]'></li>
