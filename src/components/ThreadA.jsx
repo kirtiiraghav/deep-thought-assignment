@@ -5,33 +5,36 @@ import doubt from '../../assests/images/doubt.svg'
 import lotus from '../../assests/images/lotus.svg'
 
 export default function ThreadA() {
+    // bg-[#F6F6F6]
     return (
         <div className='font-poppins '>
             <div className='bg-[#FEFFC0] py-2 px-2 font-bold'>Thread A</div>
             <div className='px-4 py-4 gap-2 flex justify-between'>
-                <div className='bg-[#F6F6F6] rounded-xl max-w-[45%] text-sm py-1'>&nbsp; Sub thread 1 <br />
-                    <input className='rounded-xl py-1 px-2 shadow-lg h-[70px]' type="text" placeholder='Enter text here' />
+                <div className=' rounded-xl max-w-[45%] text-sm pt-1'>&nbsp; Sub thread 1 <br />
+                    <input className='bg-[#F6F6F6] mt-1 rounded-xl py-1 px-2 shadow-lg h-[70px] w-full' type="text" placeholder='Enter text here' />
                 </div>
-                <div className='bg-[#F6F6F6] rounded-xl max-w-[45%] text-sm py-1'>&nbsp; Sub Interpretation 1 <br />
-                    <input className='rounded-xl py-1 px-2  shadow-lg h-[70px]' type="text" placeholder='Enter text here' />
+                <div className='rounded-xl max-w-[45%] text-sm pt-1'>&nbsp; Sub Interpretation 1 <br />
+                    <input className='bg-[#F6F6F6] mt-1 rounded-xl py-1 px-2  shadow-lg h-[70px] w-full' type="text" placeholder='Enter text here' />
                 </div>
             </div>
 
-            <div className='flex gap-2 justify-evenly px-4 py-4'>
+            <div className='text-sm sm:text-base flex gap-2 justify-evenly px-4 py-4'>
                 <img className='cursor-pointer' src={idea} alt="" />
                 <img className='cursor-pointer' src={msg} alt="" />
                 <img className='cursor-pointer' src={doubt} alt="" />
                 <img className='cursor-pointer' src={lotus} alt="" />
-                <select className='shadow-lg px-1 py-2 rounded-xl outline-none' name="" id="">
-                    <option hidden>Select Category</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                </select>
-                <select className='shadow-lg px-1 py-2 rounded-xl outline-none' name="" id="">
-                    <option hidden>Select Process</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                </select>
+                <div className='flex flex-col sm:flex-row gap-4 sm:gap-2'>
+                    <select className='shadow-lg px-1 py-2 rounded-xl outline-none' name="" id="">
+                        <option hidden>Select Category</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                    <select className='shadow-lg px-1 py-2 rounded-xl outline-none' name="" id="">
+                        <option hidden>Select Process</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                </div>
             </div>
 
             <div className='px-4 py-4'>
