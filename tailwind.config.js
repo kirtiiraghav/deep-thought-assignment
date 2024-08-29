@@ -10,18 +10,8 @@ export default {
             fontFamily: {
                 'poppins':["Poppins", "sans-serif"]
             },
-            fontWeight: {
-                thin: '100',
-                extralight: '200',
-                light: '300',
-            }
         },
     },
-    plugins: [
-        plugin(function({ addVariant }) {
-          addVariant("open-journey-board", ".open-journey-board &");
-        })
-      ],
-
+    plugins: [],
 }
 

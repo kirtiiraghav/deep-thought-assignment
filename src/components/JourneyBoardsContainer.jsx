@@ -4,6 +4,7 @@ import iButton from '../../assests/images/iButton.svg'
 import ThreadA from './ThreadA';
 import ArticleForm from './ArticleForm';
 import YouTubeEmbed from './YouTubeEmbed';
+import Method4SA from './Method4SA';
 
 const JourneyBoardsContainer = () => {
     const data = projectData
@@ -21,6 +22,9 @@ const JourneyBoardsContainer = () => {
                         break;
                     case 2:
                         ComponentToRender = <ArticleForm />;
+                        break;
+                    case 3:
+                        ComponentToRender = <Method4SA />;
                         break;
                 }
                 return (
