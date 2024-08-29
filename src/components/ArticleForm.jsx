@@ -10,8 +10,8 @@ export default function ArticleForm() {
         <textarea rows={1}  className='w-full shadow-xl bg-[#FCFBFB] rounded-lg px-2 py-1' name="" id="title"></textarea>
 
         <label htmlFor="content">Content</label>
-        <div className=' rounded-lg shadow-xl w-full px-2 py-2 text-sm bg-[#FCFBFB] text-[#616161]'>
-            <ul className='flex gap-2 '>
+        <div className=' rounded-t-lg mb-1 shadow-lg w-full px-2 py-2 text-sm bg-[#FCFBFB] text-[#616161]'>
+            <ul className='flex gap-2 flex-wrap'>
                 <li className='cursor-pointer'>File</li>
                 <li className='cursor-pointer'>Edit</li>
                 <li className='cursor-pointer'>View</li>
@@ -33,7 +33,7 @@ export default function ArticleForm() {
                 </ul>
             </ul>
         </div>
-        <textarea rows={5} className='w-full bg-[#FCFBFB] rounded-lg shadow-xl px-2 py-1 ' name="" id="content"></textarea>
+        <textarea rows={5} className='w-full bg-[#FCFBFB] rounded-b-lg shadow-xl px-2 py-1 ' name="" id="content"></textarea>
     </div>
   )
 }
