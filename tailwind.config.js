@@ -8,8 +8,11 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                'poppins':["Poppins", "sans-serif"]
+                'poppins': ["Poppins", "sans-serif"]
             },
+            screens: {
+                'media1200': '1200px'
+            }
         },
     },
     plugins: [],
