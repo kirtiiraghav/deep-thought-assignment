@@ -1,4 +1,5 @@
 import FloatingActions from './components/FloatingActions'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import JourneyBoard from './components/JourneyBoard'
 import JourneyBoardHead from './components/JourneyBoardHead'
@@ -21,7 +22,7 @@ function App() {
                 <JourneyBoardsContainer />
             </div>
             <FloatingActions />
-
+            <Footer />
         </>
     )
 }
