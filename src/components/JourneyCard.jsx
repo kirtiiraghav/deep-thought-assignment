@@ -1,8 +1,7 @@
 import React from 'react';
-import ThreadA from './ThreadA';
-import ArticleForm from './ArticleForm';
 
 const JourneyCard = ({ title, description, children, icon }) => {
+    console.log(children);
     return (
         <div className="font-poppins w-full md:w-[450px] rounded-xl overflow-hidden shadow-md mb-6">
             <div className="bg-[#000] text-white py-2 px-3  flex justify-between">
@@ -12,7 +11,7 @@ const JourneyCard = ({ title, description, children, icon }) => {
             <div className="p-4">
                 <p className="text-sm mb-4"><span className='font-semibold'>Description: </span>{description}</p>
             </div>
-            <ArticleForm/>
+            {children}
         </div>
     );
 };
