@@ -3,6 +3,7 @@ import { projectData } from '../../projectData';
 import iButton from '../../assests/images/iButton.svg'
 import ThreadA from './ThreadA';
 import ArticleForm from './ArticleForm';
+import YouTubeEmbed from './YouTubeEmbed';
 
 const JourneyBoardsContainer = () => {
     const data = projectData
@@ -12,6 +13,9 @@ const JourneyBoardsContainer = () => {
             {data.tasks[0].assets.map((asset, idx) => {
                 let ComponentToRender;
                 switch (idx) {
+                    case 0:
+                        ComponentToRender = <YouTubeEmbed />;
+                        break;
                     case 1:
                         ComponentToRender = <ThreadA />;
                         break;
