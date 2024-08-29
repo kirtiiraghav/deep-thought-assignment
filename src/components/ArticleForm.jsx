@@ -7,7 +7,7 @@ export default function ArticleForm() {
   return (
     <div className='px-4 pt-4'>
         <label className='w-full' htmlFor="title">Title</label>
-        <textarea  className='w-full shadow-xl bg-[#FCFBFB] rounded-lg' name="" id="title"></textarea>
+        <textarea rows={1}  className='w-full shadow-xl bg-[#FCFBFB] rounded-lg px-2 py-1' name="" id="title"></textarea>
 
         <label htmlFor="content">Content</label>
         <div className=' rounded-lg shadow-xl w-full px-2 py-2 text-sm bg-[#FCFBFB] text-[#616161]'>
@@ -33,7 +33,7 @@ export default function ArticleForm() {
                 </ul>
             </ul>
         </div>
-        <textarea rows={5} className='w-full bg-[#FCFBFB] rounded-lg shadow-xl ' name="" id="content"></textarea>
+        <textarea rows={5} className='w-full bg-[#FCFBFB] rounded-lg shadow-xl px-2 py-1 ' name="" id="content"></textarea>
     </div>
   )
 }
