@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import backArrow from '../../assests/images/backArrow.svg';
+import { projectData } from '../../projectData';
 
 export default function JourneyBoard() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -7,7 +8,7 @@ export default function JourneyBoard() {
     const handleToggle = () => {
         setIsExpanded(!isExpanded);
     };
-
+    const data = projectData
     return (
         <div
             className={`font-poppins shadow-md transition-all duration-300 ease-in-out
@@ -36,13 +37,14 @@ export default function JourneyBoard() {
                 {/* Content visible when expanded */}
                 <ul>
                     <li className="list-disc font-semibold">
-                        Explore the world of management
+                        {data.tasks[0].task_title}
                     </li>
                     <ul className="list-disc mt-4">
-                        <li>Technical Project Management</li>
-                        <li>Threadbuild</li>
-                        <li>Structure your pointers</li>
-                        <li>4SA Method</li>
+                        {
+                            data.tasks[0].assets.map((asset) => {
+                                return <li>{asset.asset_title}</li>
+                            })
+                        }
                     </ul>
                 </ul>
             </div>

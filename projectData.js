@@ -37,11 +37,11 @@ export const projectData = {
             "task_description": "As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?",
             "status": "notworkyet",
             "assets": [
-                {
+                { 
                     "asset_id": 18883,
                     "asset_title": "Technical Project Management",
                     "asset_description": "Story of Alignment\r\nScope of Agility\r\nSpecific Accountable \r\nStaggering Approach\r\n\r\n",
-                    "asset_content": " https://www.youtube.com/embed/TiMRwri1xJ8",
+                    "asset_content": "https://www.youtube.com/embed/TiMRwri1xJ8",
                     "asset_type": "display_asset",
                     "asset_content_type": "video"
                 },
